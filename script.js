@@ -42,7 +42,7 @@
             cursorDot.style.top = e.clientY + 'px';
         });
         
-        const interactiveElements = document.querySelectorAll('a, button, .tech-tag, .project-card, .skill-item, .timeline-item, .actualite-item, input, textarea, select');
+        const interactiveElements = document.querySelectorAll('a, button, .tech-tag, .project-card, .skill-item, .timeline-item, .actualite-item, .stage-card, input, textarea, select');
         
         interactiveElements.forEach(el => {
             el.addEventListener('mouseenter', function() {

@@ -931,6 +931,173 @@ p {
 }
 
 /* =====================================================
+   STAGES SECTION
+===================================================== */
+
+.stages-section {
+    margin: 6rem 0;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.stages-section h2 {
+    text-align: center;
+}
+
+.stages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stage-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.stage-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.stage-card:hover::before {
+    left: 100%;
+}
+
+.stage-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.3);
+}
+
+.stage-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stage-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #8b5cf6 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    transition: all 0.3s;
+}
+
+.stage-card:hover .stage-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+.stage-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.stage-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.stage-info-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.stage-info-item i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-top: 0.25rem;
+    min-width: 20px;
+}
+
+.stage-info-text {
+    flex: 1;
+}
+
+.stage-info-text strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.stage-info-text p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.stage-missions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.stage-missions-list li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.stage-missions-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.stage-project-title {
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.stage-button {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.stage-button .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* =====================================================
    CONTACT SECTION
 ===================================================== */
 
@@ -941,17 +1108,17 @@ p {
 }
 
 #contact p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    margin: 3rem 0;
-    max-width: 800px;
+    gap: 2rem;
+    margin: 2rem 0;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -992,7 +1159,7 @@ p {
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 3rem;
+    padding: 2rem;
     width: 100%;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
@@ -1023,7 +1190,7 @@ p {
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .form-group {
@@ -1040,13 +1207,13 @@ p {
 
 .form-group input,
 .form-group textarea {
-    padding: 0.875rem 1rem;
-    background-color: var(--bg-secondary);
+    padding: 0.75rem 1rem;
+    background-color: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.95rem;
     transition: all 0.3s;
     width: 100%;
 }
@@ -1060,7 +1227,7 @@ p {
 
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 100px;
 }
 
 .contact-form .btn {
@@ -1295,6 +1462,15 @@ body.custom-cursor-enabled select {
     .e5-cards-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .stages-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .stage-card {
+        padding: 2rem;
     }
 
     .about-card {
