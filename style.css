@@ -185,8 +185,11 @@ p {
 
 .hero-title-section {
     margin-top: 100px;
-    padding: 4rem 0 6rem;
+    padding: 8rem 0 8rem;
     width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero-title-wrapper {
@@ -306,7 +309,7 @@ p {
 ===================================================== */
 
 .about-section {
-    margin: 8rem 0 4rem;
+    margin: 6rem 0 4rem;
     padding: 2rem 0;
     text-align: center;
 }
@@ -598,7 +601,7 @@ p {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -617,7 +620,7 @@ p {
 
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 150px;
     background: linear-gradient(135deg, var(--primary-color) 0%, #8b5cf6 100%);
     display: flex;
     align-items: center;
@@ -662,11 +665,11 @@ p {
 }
 
 .project-info {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 200px;
+    min-height: 140px;
 }
 
 .project-info h3 {
@@ -1107,18 +1110,13 @@ p {
     text-align: center;
 }
 
-#contact p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-}
-
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin: 2rem 0;
-    max-width: 700px;
+    margin: 3rem 0;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1159,8 +1157,9 @@ p {
     background-color: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
+    max-width: 450px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
