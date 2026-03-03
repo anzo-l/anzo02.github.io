@@ -210,14 +210,17 @@
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <div class="project-info">
-                    <h3>Veille technologique</h3>
-                    <p>Veille sur les ransomwares et les dernières menaces en cybersécurité.</p>
-                    <div class="project-links">
-                        <a href="Documents/Documentation Veille technologique.pdf" class="project-link" title="Voir la documentation" target="_blank">
-                            <i class="fas fa-file-alt"></i>
-                            <span>Documentation</span>
-                        </a>
-                    </div>
+                        <h3>Veille technologique</h3>
+                        <p>Surveillance concise des ransomwares et des défenses associées.</p>
+
+                        <div class="project-links">
+                            <a href="Documents/Documentation Veille technologique.pdf" class="project-link" title="Voir la documentation" target="_blank">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Documentation</span>
+                            </a>
+                        </div>
+
+                        <!-- Interactive summary moved to Veille section -->
                 </div>
             </div>
 
@@ -487,40 +490,67 @@
         
         <div class="veille-content">
             <div class="veille-description">
-                <h3>Veille sur les Ransomwares</h3>
+                <h3>Définition</h3>
                 <p>
-                    Les ransomwares représentent une menace majeure dans le domaine de la cybersécurité. 
-                    Je me tiens régulièrement informé des dernières attaques, techniques utilisées par les cybercriminels, 
-                    et des méthodes de protection et de prévention pour sécuriser les systèmes d'information.
+                    La veille technologique consiste à surveiller les évolutions, vulnérabilités et menaces
+                    affectant les systèmes d'information afin d'anticiper, prévenir et réagir efficacement.
                 </p>
-            </div>
-            
-            <div class="veille-actualites">
-                <h3>Dernières actualités suivies</h3>
-                <div class="actualites-list">
-                    <div class="actualite-item">
+
+                <h3 style="margin-top: 3rem;">Ransomwares</h3>
+                <p>
+                    Les ransomwares sont des logiciels malveillants qui chiffrent les données d'une victime et exigent une rançon pour leur déchiffrement.
+                    Ils représentent une menace majeure pour les organisations, causant interruptions d'activité, pertes de données et impacts financiers significatifs.
+                </p>
+
+                <p style="margin-top: 2rem; font-style: italic; color: var(--text-secondary);">
+                    Suivi active des menaces émergentes, concentrée sur :
+                </p>
+
+                <div class="veille-cards" style="margin-top: 3rem;">
+                    <div class="veille-card">
+                        <i class="fas fa-user-secret"></i>
+                        <h4>Threat actors</h4>
+                        <p>Groupes observés (ex. LockBit)</p>
+                    </div>
+
+                    <div class="veille-card">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Techniques d'attaque</h4>
+                        <p>Méthodes d'exploitation</p>
+                    </div>
+
+                    <div class="veille-card">
                         <i class="fas fa-shield-alt"></i>
-                        <div class="actualite-content">
-                            <h4>Nouvelles techniques de ransomwares</h4>
-                            <p>Évolution des méthodes d'attaque et des vecteurs d'infection utilisés par les groupes de cybercriminels.</p>
-                            <span class="actualite-date">Dernière mise à jour : Récemment</span>
-                        </div>
+                        <h4>Défense</h4>
+                        <p>Sauvegardes, segmentation, détection</p>
                     </div>
-                    <div class="actualite-item">
-                        <i class="fas fa-lock"></i>
-                        <div class="actualite-content">
-                            <h4>Meilleures pratiques de protection</h4>
-                            <p>Stratégies de sauvegarde, solutions de sécurité et bonnes pratiques pour prévenir les attaques par ransomware.</p>
-                            <span class="actualite-date">Dernière mise à jour : Récemment</span>
-                        </div>
+                </div>
+
+                <h4 style="margin-top: 3rem;">Sources principales</h4>
+
+                <div class="veille-cards">
+                    <div class="veille-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h4><a href="Documents/Documentation Veille technologique.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documentation</a></h4>
+                        <p>Personnelle (PDF)</p>
                     </div>
-                    <div class="actualite-item">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <div class="actualite-content">
-                            <h4>Alertes et cas d'attaques récents</h4>
-                            <p>Suivi des principales attaques de ransomwares dans le monde et analyse de leur impact sur les organisations.</p>
-                            <span class="actualite-date">Dernière mise à jour : Récemment</span>
-                        </div>
+
+                    <div class="veille-card">
+                        <i class="fas fa-bell"></i>
+                        <h4><a href="https://www.google.com/alerts" target="_blank" style="color: inherit; text-decoration: none;">Google Alerts</a></h4>
+                        <p>Alertes personnalisées</p>
+                    </div>
+
+                    <div class="veille-card">
+                        <i class="fas fa-shield"></i>
+                        <h4><a href="https://www.cert.ssi.gouv.fr/" target="_blank" style="color: inherit; text-decoration: none;">CERT-FR</a></h4>
+                        <p>ANSSI & cybersécurité</p>
+                    </div>
+
+                    <div class="veille-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h4><a href="https://news.ycombinator.com/" target="_blank" style="color: inherit; text-decoration: none;">Hacker News</a></h4>
+                        <p>Actualités tech</p>
                     </div>
                 </div>
             </div>
